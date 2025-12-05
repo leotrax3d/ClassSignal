@@ -5,6 +5,7 @@
 ![Status](https://img.shields.io/badge/status-proof%20of%20concept-yellow)
 ![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi%204-red)
 ![Hardware](https://img.shields.io/badge/hardware-ESP32-green)
+![Hardware](https://img.shields.io/badge/hardware-RaspberryPi-green)
 
 **Digital classroom engagement system using ESP32 devices for real-time student participation tracking**
 
