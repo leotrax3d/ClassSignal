@@ -22,13 +22,13 @@ Class Signal is a self-contained classroom management system that enables studen
 
 ## Features
 
-- 🎓 **Student Authentication** - Personal 4-digit codes with OLED feedback
-- 🖐️ **Instant Participation Signaling** - One-button press to join the discussion queue
-- 📊 **Real-time Teacher Dashboard** - Live updates via WebSocket
-- 💬 **Feedback System** - Direct assessment of student contributions
-- 📈 **Analytics & Reports** - Engagement statistics and CSV/YAML exports
-- 🔒 **Local Network** - Complete data sovereignty, no internet required
-- ⚡ **Low Latency** - Sub-second response times
+-  **Student Authentication** - Personal 4-digit codes with OLED feedback
+-  **Instant Participation Signaling** - One-button press to join the discussion queue
+-  **Real-time Teacher Dashboard** - Live updates via WebSocket
+-  **Feedback System** - Direct assessment of student contributions
+-  **Analytics & Reports** - Engagement statistics and CSV/YAML exports
+-  **Local Network** - Complete data sovereignty, no internet required
+-  **Low Latency** - Sub-second response times
 
 ## System Architecture
 
@@ -38,9 +38,9 @@ Class Signal is a self-contained classroom management system that enables studen
 │  (Student)  │      TCP/JSON         │   (AP + Server)  │
 └─────────────┘                       └────────┬─────────┘
                                                │
-┌─────────────┐                               │
-│   ESP32     │◄──────────────────────────────┘
-│  (Student)  │         WiFi
+┌─────────────┐                                |
+│   ESP32     │◄───────────────────────────────|
+│  (Student)  │         WiFi                   |
 └─────────────┘                       ┌──────────────────┐
                                       │  Web Dashboard   │
                                       │    (Teacher)     │
@@ -56,30 +56,7 @@ Class Signal is a self-contained classroom management system that enables studen
 - Frontend: React/Svelte + Tailwind CSS
 - Storage: Local YAML files
 
-## Installation
 
-### Raspberry Pi Setup
-
-```bash
-# Install dependencies
-sudo apt update
-sudo apt install python3-pip hostapd dnsmasq
-
-# Clone repository
-git clone https://github.com/yourusername/class-signal.git
-cd class-signal
-
-# Install Python packages
-pip3 install -r requirements.txt
-
-# Configure WiFi access point
-sudo systemctl enable hostapd
-sudo systemctl enable dnsmasq
-# Edit /etc/hostapd/hostapd.conf and /etc/dnsmasq.conf
-
-# Start server
-python3 server.py
-```
 
 ### ESP32 Firmware
 
@@ -164,8 +141,8 @@ Edit `config.yaml` to customize:
 
 ## Roadmap
 
-- [x] Basic WiFi and TCP communication
-- [x] Student authentication system
+- [ ] Basic WiFi and TCP communication
+- [ ] Student authentication system
 - [ ] Web dashboard with live updates
 - [ ] Feedback and rating system
 - [ ] Statistical analysis and reports
@@ -202,15 +179,9 @@ Contributions welcome! Please:
 5. Open a Pull Request
 
 ## License
-
-TBD - License to be determined based on institutional requirements.
-
+we will see :)
 ## Author
 
 **Leonardo**
 
-For questions or feedback, please open an issue on GitHub.
-
-## Acknowledgments
-
-Created as a proof of concept to improve classroom participation and engagement through technology.
+For questions or feedback, please open an issue on GitHub
