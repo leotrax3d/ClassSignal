@@ -1,4 +1,4 @@
-# Class Signal
+# ClassSignal
 
 <div align="center">
 
