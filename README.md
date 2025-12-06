@@ -1,5 +1,23 @@
 # ClassSignal
 
+    
+ 
+
+
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Äußeres Quadrat mit abgerundeten Ecken (Klassenraum/System) -->
+  <rect x="30" y="30" width="140" height="140" rx="20" fill="none" stroke="#2563eb" stroke-width="4"/>
+  
+  <!-- Vertikaler Balken (erhobene Hand/Meldung) -->
+  <rect x="90" y="60" width="20" height="80" rx="10" fill="#2563eb"/>
+  
+  <!-- Kleines Dreieck oben (Richtung/Signal nach oben) -->
+  <path d="M 100 45 L 110 60 L 90 60 Z" fill="#ef4444"/>
+  
+  <!-- Horizontale Linie unten (Basis/Pult) -->
+  <rect x="60" y="145" width="80" height="6" rx="3" fill="#2563eb" opacity="0.5"/>
+</svg>
+
 <div align="center">
 
 ![Status](https://img.shields.io/badge/status-proof%20of%20concept-yellow)
