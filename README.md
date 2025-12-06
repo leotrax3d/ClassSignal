@@ -69,25 +69,9 @@ Class Signal is a self-contained classroom management system that enables studen
 ```
 
 **Hardware:**
-- ESP32 Xiao with OLED display and buttons
+- ESP32 with OLED display and 2 buttons
 - Raspberry Pi 4 as WiFi access point and server
 
-**Software:**
-- Backend: Python (Flask/FastAPI) with WebSocket support
-- Frontend: React/Svelte + Tailwind CSS
-- Storage: Local YAML files
-
-
-
-### ESP32 Firmware
-
-1. Open `esp32/class_signal.ino` in Arduino IDE
-2. Install required libraries:
-   - Adafruit SSD1306
-   - ArduinoJson
-   - WiFi
-3. Configure WiFi credentials in the code
-4. Upload to ESP32 Xiao
 
 ## Usage
 
@@ -101,64 +85,12 @@ Class Signal is a self-contained classroom management system that enables studen
 
 ### For Teachers
 
-1. Open web dashboard at `http://192.168.4.1:5000`
+1. Open web dashboard
 2. Monitor participation queue in real-time
 3. Click on student names to acknowledge
 4. Provide feedback after student contributions
 5. View statistics and export reports
 
-## Communication Protocol
-
-All messages use JSON format over TCP sockets.
-
-### Login
-```json
-// ESP → Server
-{"type":"login","device_id":"ESP01","user_code":"1234","timestamp":"2025-11-08T09:18:01Z"}
-
-// Server → ESP
-{"type":"login_response","status":"ok","user_id":1234,"user_name":"Leonardo","timestamp":"2025-11-08T09:18:02Z"}
-```
-
-### Participation Signal
-```json
-// ESP → Server
-{"type":"raise_hand","device_id":"ESP01","user_id":1234,"timestamp":"2025-11-08T09:20:00Z"}
-
-// Server → ESP
-{"type":"raise_hand_ack","status":"ok","timestamp":"2025-11-08T09:20:00Z"}
-```
-
-## Data Structure
-
-### Students Database (`schueler.yaml`)
-```yaml
-schueler:
-  - id: 1234
-    name: "Leonardo"
-    klasse: "8A"
-  - id: 4321
-    name: "Anna"
-    klasse: "8A"
-```
-
-### Participation Records (`meldungen.yaml`)
-```yaml
-meldungen:
-  - user_id: 1234
-    timestamp: "2025-11-08T09:20:00Z"
-    device_id: "ESP01"
-    status: "acknowledged"
-    feedback: "excellent contribution"
-```
-
-## Configuration
-
-Edit `config.yaml` to customize:
-- Network settings (SSID, password)
-- Server port and address
-- Feedback options
-- Display preferences
 
 ## Roadmap
 
@@ -174,7 +106,7 @@ Edit `config.yaml` to customize:
 
 **Hardware:**
 - Raspberry Pi 4 (2GB+ RAM)
-- ESP32 Xiao boards
+- ESP32  boards
 - 0.96" OLED displays (I2C)
 - Push buttons
 
