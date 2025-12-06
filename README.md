@@ -1,5 +1,5 @@
 # ClassSignal
-![logo](logo.png)
+![logo](assets/logo_trans.png)
     
  
 
