@@ -68,11 +68,6 @@ Class Signal is a self-contained classroom management system that enables studen
                                       └──────────────────┘
 ```
 
-**Hardware:**
-- ESP32 with OLED display and 2 buttons
-- Raspberry Pi 4 as WiFi access point and server
-
-
 ## Usage
 
 ### For Students
@@ -122,17 +117,8 @@ Class Signal is a self-contained classroom management system that enables studen
 - All data stored locally on Raspberry Pi
 - Personal authentication codes for students
 
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## License
-we will see :)
+Apache 2.0
 ## Author
 
 **Leonardo**
