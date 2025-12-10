@@ -89,7 +89,7 @@ Class Signal is a self-contained classroom management system that enables studen
 
 ## Roadmap
 
-- [ ] Basic WiFi and TCP communication
+- [x] Basic WiFi and TCP communication
 - [ ] Student authentication system
 - [ ] Web dashboard with live updates
 - [ ] Feedback and rating system
