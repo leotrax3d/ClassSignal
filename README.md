@@ -31,7 +31,7 @@
 
 **Digital classroom engagement system using ESP32 devices for real-time student participation tracking**
 
-[Features](#features) • [Installation](deployment/) • [Contributing](#contributing) • [Contributing](LICENSE/)
+[Features](#features) • [Installation](deployment/) • [Contributing](#contributing) • [License](LICENSE/)
 
 </div>
 
