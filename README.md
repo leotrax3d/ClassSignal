@@ -31,7 +31,7 @@
 
 **Digital classroom engagement system using ESP32 devices for real-time student participation tracking**
 
-[Features](#features) • [Installation](deployment/docker-compose) • [Usage](#usage) • [Protocol](#communication-protocol) • [Contributing](#contributing)
+[Features](#features) • [Installation](deployment/) • [Usage](#usage) • [Protocol](#communication-protocol) • [Contributing](#contributing)
 
 </div>
 
